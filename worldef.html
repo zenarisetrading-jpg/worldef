@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
         body {
@@ -21,6 +22,10 @@
 
         .font-mono {
             font-family: 'JetBrains Mono', monospace;
+        }
+
+        .font-display {
+            font-family: 'Outfit', sans-serif;
         }
     </style>
 </head>
@@ -52,111 +57,195 @@
     <!-- ============================================ -->
     <!-- SECTION 1: HERO (Saddl x WORLDEF) -->
     <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!-- SECTION 1: HERO (Saddl x WORLDEF) -->
+    <!-- ============================================ -->
     <section class="min-h-screen flex items-center pt-20 bg-slate-900 text-white relative overflow-hidden">
-        <!-- Background accents -->
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-[#ec6602]/10 blur-[120px]"></div>
-        <div class="absolute bottom-0 left-0 w-1/2 h-full bg-[#2A8EC9]/10 blur-[120px]"></div>
+        <!-- Premium Background Effects -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
+        <div class="absolute inset-0 spotlight-bg pointer-events-none"></div>
+
+        <!-- Animated Blobs -->
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-[#ec6602]/20 rounded-full blur-[120px] mix-blend-screen opacity-40 animate-float pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#2A8EC9]/20 rounded-full blur-[100px] mix-blend-screen opacity-40 animate-float-delay pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 py-20 relative z-10 text-center lg:text-left">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 animate-fade-in-up">
                     <div
-                        class="inline-flex items-center gap-3 px-4 py-2 bg-white/10 rounded-full border border-white/20 mb-8 backdrop-blur-sm">
-                        <span class="text-[#ec6602] font-bold">WORLDEF</span>
-                        <span class="text-slate-400">|</span>
-                        <span class="text-white">Dubai 2026</span>
+                        class="inline-flex items-center gap-3 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full mb-8 backdrop-blur-md shadow-[0_0_15px_rgba(236,102,2,0.3)] hover:shadow-[0_0_25px_rgba(236,102,2,0.5)] transition-all duration-500 cursor-default group hover:bg-white/10">
+                        <img src="assets/images/worldefdubai.png" alt="WORLDEF Dubai 2026"
+                            class="h-8 w-auto object-contain">
                     </div>
 
-                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-8">
-                        The Future of Cross-Border <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A8EC9] to-[#ec6602]">Profitability</span>
+                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-8 tracking-tight">
+                        The Future of <br class="hidden lg:block" />Cross-Border <br />
+                        <span class="text-gradient-premium text-glow-blue">Profitability</span>
                     </h1>
 
-                    <p class="text-xl text-slate-300 mb-10 leading-relaxed">
+                    <p
+                        class="text-xl text-slate-300 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light border-l-4 border-[#2A8EC9] pl-6 delay-200 animate-fade-in-up">
                         Saddl is joining the world's largest cross-border e-commerce event.
-                        We bring the "White Box" of decision intelligence to global brands scaling across borders.
+                        We bring the <strong class="text-white font-semibold">"White Box"</strong> of decision
+                        intelligence to global brands scaling across markets.
                     </p>
 
-                    <div class="flex flex-wrap gap-4 items-center justify-center lg:justify-start">
+                    <div
+                        class="flex flex-wrap gap-4 items-center justify-center lg:justify-start delay-300 animate-fade-in-up">
                         <a href="bookdemo.html"
-                            class="inline-block bg-[#2A8EC9] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#2276A8] transition-colors shadow-lg">
+                            class="btn-shine-effect inline-block bg-gradient-to-r from-[#2A8EC9] to-[#1c6fa3] text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1 transition-all">
                             Meet Us at WORLDEF
                         </a>
-                        <a href="audit.html"
-                            class="inline-block bg-white/10 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/20 transition-colors shadow-lg border border-white/20">
-                            Get Free Event Audit
-                        </a>
+
                     </div>
                 </div>
 
-                <!-- Visual/Logo Mashup -->
-                <div class="lg:w-7/12 relative">
-                    <div
-                        class="bg-slate-100 border border-slate-300 rounded-3xl p-12 relative overflow-hidden shadow-2xl">
-                        <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent"></div>
+                <!-- Visual/Logo Mashup & Countdown -->
+                <div class="lg:w-1/2 relative w-full perspective-1000 delay-500 animate-fade-in-up">
+                    <div class="glass-card-premium rounded-3xl p-8 lg:p-12 relative overflow-hidden">
+
+                        <!-- Inner Glow -->
                         <div
-                            class="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-10">
+                            class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-50 pointer-events-none">
+                        </div>
+
+                        <div
+                            class="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-8">
                             <!-- Saddl Logo -->
-                            <div class="relative group">
+                            <div class="relative group animate-float">
                                 <div
-                                    class="absolute -inset-4 bg-blue-100/50 rounded-full filter blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    class="absolute -inset-4 bg-blue-500/20 rounded-full filter blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                                 </div>
                                 <img src="assets/images/saddl main both.png" alt="Saddl Logo"
-                                    class="relative w-52 lg:w-64 h-auto object-contain drop-shadow-xl transition-transform hover:scale-105 duration-500">
+                                    class="relative w-48 lg:w-56 h-auto object-contain drop-shadow-2xl brightness-125 filter contrast-125">
                             </div>
 
-                            <!-- Elegant Vertical Divider -->
-                            <div
-                                class="hidden lg:block w-px h-24 bg-gradient-to-b from-transparent via-slate-300 to-transparent">
+                            <!-- Elegant Divider -->
+                            <div class="hidden lg:flex flex-col items-center gap-2">
+                                <div class="w-px h-12 bg-gradient-to-b from-transparent via-slate-500 to-transparent">
+                                </div>
+                                <span class="text-slate-500 font-mono text-xs">x</span>
+                                <div class="w-px h-12 bg-gradient-to-b from-transparent via-slate-500 to-transparent">
+                                </div>
                             </div>
 
                             <!-- WORLDEF Logo -->
-                            <div class="relative group">
+                            <div class="relative group animate-float-delay">
                                 <div
-                                    class="absolute -inset-4 bg-orange-100/50 rounded-full filter blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    class="absolute -inset-4 bg-white/20 rounded-2xl filter blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                                 </div>
-                                <img src="assets/images/worldef.png" alt="WORLDEF Logo"
-                                    class="relative w-64 lg:w-96 h-auto object-contain mix-blend-multiply transition-transform hover:scale-105 duration-500">
+                                <div
+                                    class="bg-white rounded-2xl p-4 lg:p-6 shadow-[0_0_30px_rgba(255,255,255,0.1)] border border-white/20 relative z-10 transform transition-transform duration-500 group-hover:scale-105">
+                                    <img src="assets/images/worldef.png" alt="WORLDEF Logo"
+                                        class="relative w-48 lg:w-64 h-auto object-contain">
+                                </div>
                             </div>
                         </div>
-                        <div class="mt-8 text-center bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                            <!-- Countdown Timer -->
-                            <div class="mb-6 pb-6 border-b border-slate-100">
-                                <p class="text-slate-500 font-mono text-xs uppercase tracking-widest mb-3">Event Starts
-                                    In</p>
-                                <div id="countdown" class="flex items-center justify-center gap-4 text-center">
-                                    <div>
-                                        <div class="text-2xl font-bold text-slate-900 font-mono" id="days">00</div>
-                                        <div class="text-[10px] text-slate-500 uppercase tracking-wider">Days</div>
+
+                        <!-- Countdown Section -->
+                        <div class="mt-8 relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent h-px w-full -top-6">
+                            </div>
+
+                            <div
+                                class="bg-black/40 rounded-2xl p-6 border border-white/5 backdrop-blur-sm shadow-inner relative overflow-hidden">
+                                <!-- Cyber scanline effect -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-10 pointer-events-none">
+                                </div>
+
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+                                        <p
+                                            class="text-slate-400 font-display text-xs uppercase tracking-widest font-medium">
+                                            Live
+                                            Countdown</p>
                                     </div>
-                                    <div class="text-slate-300 font-bold">:</div>
-                                    <div>
-                                        <div class="text-2xl font-bold text-slate-900 font-mono" id="hours">00</div>
-                                        <div class="text-[10px] text-slate-500 uppercase tracking-wider">Hrs</div>
+                                    <p
+                                        class="text-[#2A8EC9] font-bold text-xs bg-[#2A8EC9]/10 px-2 py-1 rounded border border-[#2A8EC9]/20 font-display">
+                                        UTC+4</p>
+                                </div>
+
+                                <div id="countdown" class="flex items-center justify-center gap-2 sm:gap-6 text-center">
+                                    <div class="bg-white/5 rounded-lg p-3 min-w-[70px] border border-white/10">
+                                        <div class="text-3xl lg:text-4xl font-bold text-white font-display leading-none tracking-tighter"
+                                            id="days">00</div>
+                                        <div
+                                            class="text-[10px] text-slate-500 uppercase tracking-wider mt-1 font-display font-medium">
+                                            Days</div>
                                     </div>
-                                    <div class="text-slate-300 font-bold">:</div>
-                                    <div>
-                                        <div class="text-2xl font-bold text-slate-900 font-mono" id="minutes">00</div>
-                                        <div class="text-[10px] text-slate-500 uppercase tracking-wider">Min</div>
+                                    <div class="text-slate-500 font-bold text-xl mb-4">:</div>
+                                    <div class="bg-white/5 rounded-lg p-3 min-w-[70px] border border-white/10">
+                                        <div class="text-3xl lg:text-4xl font-bold text-white font-display leading-none tracking-tighter"
+                                            id="hours">00</div>
+                                        <div
+                                            class="text-[10px] text-slate-500 uppercase tracking-wider mt-1 font-display font-medium">
+                                            Hrs</div>
                                     </div>
-                                    <div class="text-slate-300 font-bold">:</div>
-                                    <div>
-                                        <div class="text-2xl font-bold text-[#ec6602] font-mono" id="seconds">00</div>
-                                        <div class="text-[10px] text-slate-500 uppercase tracking-wider">Sec</div>
+                                    <div class="text-slate-500 font-bold text-xl mb-4">:</div>
+                                    <div class="bg-white/5 rounded-lg p-3 min-w-[70px] border border-white/10">
+                                        <div class="text-3xl lg:text-4xl font-bold text-white font-display leading-none tracking-tighter"
+                                            id="minutes">00</div>
+                                        <div
+                                            class="text-[10px] text-slate-500 uppercase tracking-wider mt-1 font-display font-medium">
+                                            Min</div>
                                     </div>
+                                    <div class="text-slate-500 font-bold text-xl mb-4">:</div>
+                                    <div
+                                        class="bg-[#ec6602]/10 rounded-lg p-3 min-w-[70px] border border-[#ec6602]/20 shadow-[0_0_15px_rgba(236,102,2,0.15)]">
+                                        <div class="text-3xl lg:text-4xl font-bold text-[#ec6602] font-display leading-none tracking-tighter text-glow-orange"
+                                            id="seconds">00</div>
+                                        <div
+                                            class="text-[10px] text-[#ec6602]/70 uppercase tracking-wider mt-1 font-display font-medium">
+                                            Sec
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="mt-6 pt-4 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-display text-slate-400">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                            </path>
+                                        </svg>
+                                        <span>Feb 12–14, 2026</span>
+                                    </div>
+                                    <a href="https://maps.app.goo.gl/uWNFHtyo88cLVUwp8" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center gap-2 group hover:text-white transition-colors">
+                                        <svg class="w-4 h-4 text-slate-500 group-hover:text-[#2A8EC9] transition-colors"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                        <span
+                                            class="border-b border-transparent group-hover:border-slate-500 transition-colors">Dubai
+                                            CommerCity</span>
+                                    </a>
                                 </div>
                             </div>
 
-                            <p class="text-slate-500 font-mono text-sm">EVENT DATE</p>
-                            <p class="text-slate-900 text-lg font-bold">12–14 February 2026</p>
-                            <p class="text-slate-500 font-mono text-sm mt-4">LOCATION</p>
-                            <p class="text-slate-900 text-lg font-bold">Dubai CommerCity</p>
-
-                            <div
-                                class="mt-6 inline-block bg-[#ec6602] border border-[#d55b02] rounded-lg px-6 py-3 shadow-lg hover:bg-[#d55b02] transition-colors cursor-pointer">
-                                <p class="text-white/90 font-mono text-sm uppercase tracking-widest mb-1">Visit Us at
-                                    Stall</p>
-                                <p class="text-white text-3xl font-black tracking-wider">A1-63</p>
+                            <div class="mt-6 flex justify-center">
+                                <div
+                                    class="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/10 hover:bg-white/10 transition-colors cursor-default">
+                                    <span
+                                        class="text-xs text-slate-400 uppercase tracking-widest font-display font-medium">Visit
+                                        Stall</span>
+                                    <span
+                                        class="text-white font-display font-bold text-lg tracking-widest text-glow-orange">A1-63</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -199,39 +288,217 @@
         }, 1000);
     </script>
 
+
+
+    <!-- ============================================ -->
+    <!-- SECTION 2: WHY SADDL FOR CROSS BORDER -->
+    <!-- ============================================ -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col items-center gap-16">
+                <!-- Top Content: Title & Intro -->
+                <div class="text-center max-w-4xl mx-auto mb-4">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 leading-tight">
+                        Scaling Borders Requires <br>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A8EC9] to-[#1c6fa3]">Precision,
+                            Not Guesswork.</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                        When you enter a new market, every dollar counts. "Black Box" tools waste budget on learning
+                        phases.
+                        Saddl tells you exactly which <strong class="text-slate-900">decisions pay for your
+                            expansion</strong>.
+                    </p>
+                </div>
+
+                <!-- Middle Content: Benefits Grid -->
+                <div class="grid md:grid-cols-3 gap-8 w-full">
+                    <!-- Benefit 1 -->
+                    <div
+                        class="bg-white rounded-xl p-6 border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col items-center text-center gap-4">
+                        <div
+                            class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            🌏
+                        </div>
+                        <div>
+                            <h3
+                                class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#2A8EC9] transition-colors">
+                                Market-Specific Baselines</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Is your optimization working, or is it just a local holiday? We isolate market
+                                trends so you know the truth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div
+                        class="bg-white rounded-xl p-6 border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col items-center text-center gap-4">
+                        <div
+                            class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 text-2xl shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            💰
+                        </div>
+                        <div>
+                            <h3
+                                class="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-600 transition-colors">
+                                Real Dollar Impact</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Don't settle for "ROAS trends". See the exact dollar value of every bid change and
+                                keyword addition in local currency.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div
+                        class="bg-white rounded-xl p-6 border border-slate-100 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col items-center text-center gap-4">
+                        <div
+                            class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 text-2xl shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            🚀
+                        </div>
+                        <div>
+                            <h3
+                                class="text-xl font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">
+                                Faster Validations</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Expansion moves fast. Our counterfactual analysis validates decisions in 14 days,
+                                reducing risk.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Content: Video -->
+                <div class="w-full max-w-5xl relative mt-8">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-3xl blur-2xl opacity-70 animate-pulse">
+                    </div>
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900 aspect-video">
+                        <iframe src="https://drive.google.com/file/d/1irLyTYyH3MxF9W5QU9CG88LYfjShXiBv/preview"
+                            width="640" height="480" allow="autoplay" class="w-full h-full object-cover"></iframe>
+
+                        <!-- Overlay/Badge -->
+                        <div
+                            class="absolute bottom-6 right-6 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-lg text-sm border border-white/10 flex items-center gap-2">
+                            <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                            Live Demo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3: EXCLUSIVE OFFER -->
+    <!-- ============================================ -->
+    <section class="py-24 bg-slate-900 relative overflow-hidden">
+        <!-- Background FX -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ec6602]/20 rounded-full blur-[100px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#2A8EC9]/20 rounded-full blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div
+                class="glass-card-premium rounded-3xl p-10 md:p-14 text-center md:text-left flex flex-col md:flex-row items-center gap-12 border border-white/10 shadow-2xl">
+                <div class="md:w-2/3">
+                    <div
+                        class="inline-block bg-[#ec6602] text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider mb-4 shadow-lg shadow-orange-500/30">
+                        Limited Time</div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white leading-tight">
+                        WORLDEF <span class="text-[#ec6602]">Exclusive</span> Offer
+                    </h2>
+                    <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                        Attending WORLDEF? We're offering a complimentary <strong class="text-white">Deep-Dive Decision
+                            Audit</strong> for
+                        all attendees. Let us analyze your last 6 months of ad decisions.
+                    </p>
+                    <ul class="space-y-4 mb-4 text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-bold">
+                                ✓</div>
+                            See how much revenue your tool actually drove
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-bold">
+                                ✓</div>
+                            Identify "bleeder" keywords in new markets
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-bold">
+                                ✓</div>
+                            1-on-1 strategy session with our founders
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-4 w-full">
+                    <a href="bookdemo.html"
+                        class="btn-shine-effect w-full bg-gradient-to-r from-[#ec6602] to-[#ff8c00] hover:from-[#ff8c00] hover:to-[#ff9d2e] text-white font-bold py-5 rounded-xl text-center transition-all shadow-[0_10px_30px_-10px_rgba(236,102,2,0.4)] hover:shadow-[0_20px_40px_-10px_rgba(236,102,2,0.6)] hover:-translate-y-1 text-lg">
+                        Start 30-day free trial
+                    </a>
+                    <a href="audit.html"
+                        class="w-full bg-white/5 backdrop-blur-md border border-white/10 text-white font-bold py-5 rounded-xl text-center hover:bg-white/10 transition-all hover:-translate-y-1">
+                        Claim Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ============================================ -->
     <!-- SECTION 1.5: DUBAI COMMERCITY PARTNERSHIP -->
     <!-- ============================================ -->
-    <section class="py-20 bg-slate-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="flex flex-col lg:flex-row items-center gap-16">
 
                 <!-- Image Container -->
-                <div class="lg:w-1/2 relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 group">
-                        <div
-                            class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                <div class="lg:w-1/2 relative group perspective-1000">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    </div>
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/50 group-hover:transform group-hover:scale-[1.01] transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60 z-10">
                         </div>
                         <img src="assets/images/1769615730450.jpeg" alt="Saddl x Dubai CommerCity"
-                            class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                            class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 object-cover">
+
+                        <div class="absolute bottom-6 left-6 z-20">
+                            <p class="text-white/80 text-sm font-display uppercase tracking-widest mb-1">Location</p>
+                            <p class="text-white font-bold text-xl">Dubai CommerCity, UAE</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Content -->
                 <div class="lg:w-1/2">
                     <div
-                        class="inline-flex items-center gap-2 px-3 py-1 bg-[#2A8EC9]/10 text-[#2A8EC9] rounded-full text-sm font-bold mb-6">
-                        <span class="w-2 h-2 rounded-full bg-[#2A8EC9]"></span>
-                        STRATEGIC PARTNERSHIP
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-[#2A8EC9]/10 text-[#2A8EC9] rounded-full text-xs font-bold mb-6 border border-[#2A8EC9]/20 uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-[#2A8EC9] animate-pulse"></span>
+                        Strategic Partnership
                     </div>
 
-                    <h2 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
                         Powering the Heart of <br>
-                        <span class="text-[#2A8EC9]">Dubai CommerCity</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A8EC9] to-[#1c6fa3]">Dubai
+                            CommerCity</span>
                     </h2>
 
                     <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        We are proud to be recognized as a <strong class="text-slate-900">Level 1 Partner</strong> at
+                        We are proud to be recognized as a <strong class="text-slate-900 bg-blue-50 px-1 rounded">Level
+                            1 Partner</strong> at
                         Dubai CommerCity, the first dedicated e-commerce free zone in the MENA region.
                     </p>
 
@@ -241,37 +508,48 @@
                     </p>
 
                     <ul class="space-y-4 mb-8">
-                        <li class="flex items-start gap-3">
-                            <svg class="w-6 h-6 text-[#2A8EC9] shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-slate-700">Exclusive access to CommerCity growth programs</span>
+                        <li class="flex items-start gap-3 group">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#2A8EC9] transition-colors duration-300">
+                                <svg class="w-4 h-4 text-[#2A8EC9] group-hover:text-white transition-colors duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-slate-700 group-hover:text-slate-900 transition-colors">Exclusive access
+                                to CommerCity growth programs</span>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-6 h-6 text-[#2A8EC9] shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-slate-700">Direct integration with regional logistics &
-                                marketplaces</span>
+                        <li class="flex items-start gap-3 group">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#2A8EC9] transition-colors duration-300">
+                                <svg class="w-4 h-4 text-[#2A8EC9] group-hover:text-white transition-colors duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-slate-700 group-hover:text-slate-900 transition-colors">Direct integration
+                                with regional logistics & marketplaces</span>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-6 h-6 text-[#2A8EC9] shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-slate-700">Level 1 priority support for resident brands</span>
+                        <li class="flex items-start gap-3 group">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#2A8EC9] transition-colors duration-300">
+                                <svg class="w-4 h-4 text-[#2A8EC9] group-hover:text-white transition-colors duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <span class="text-slate-700 group-hover:text-slate-900 transition-colors">Level 1 priority
+                                support for resident brands</span>
                         </li>
                     </ul>
 
                     <a href="index.html"
-                        class="text-[#2A8EC9] font-bold hover:text-[#2276A8] inline-flex items-center gap-2 group transition-colors">
+                        class="text-[#2A8EC9] font-bold hover:text-[#2276A8] inline-flex items-center gap-2 group transition-colors text-lg">
                         Know more about Saddl
-                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -279,106 +557,6 @@
                     </a>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 2: WHY SADDL FOR CROSS BORDER -->
-    <!-- ============================================ -->
-    <section class="py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-slate-900">
-                    Scaling Borders Requires <br>
-                    <span class="text-[#2A8EC9]">Precision, Not Guesswork.</span>
-                </h2>
-                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-                    When you enter a new market, every dollar counts. "Black Box" tools waste budget on learning phases.
-                    Saddl tells you exactly which decisions pay for your expansion.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Benefit 1 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-shadow">
-                    <div
-                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-2xl mb-6">
-                        🌏</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Market-Specific Baselines</h3>
-                    <p class="text-slate-600">
-                        Is your optimization working, or is it just a local holiday? We isolate market trends from your
-                        ad performance so you know the truth across every region.
-                    </p>
-                </div>
-
-                <!-- Benefit 2 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-shadow">
-                    <div
-                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 text-2xl mb-6">
-                        💰</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Real Dollar Impact</h3>
-                    <p class="text-slate-600">
-                        Don't settle for "ROAS trends" in your new markets. See the exact dollar value of every bid
-                        change and keyword addition in local currency.
-                    </p>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-lg transition-shadow">
-                    <div
-                        class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 text-2xl mb-6">
-                        🚀</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Faster Validations</h3>
-                    <p class="text-slate-600">
-                        Expansion moves fast. Our counterfactual analysis validates decisions in 14 days, giving you the
-                        confidence to scale or pivot quickly.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- SECTION 3: EXCLUSIVE OFFER -->
-    <!-- ============================================ -->
-    <section
-        class="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
-        <div
-            class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#ec6602]/20 via-transparent to-transparent">
-        </div>
-
-        <div class="max-w-5xl mx-auto px-6 relative z-10">
-            <div
-                class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-12 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold mb-4">WORLDEF Exclusive Offer</h2>
-                    <p class="text-slate-300 text-lg mb-8">
-                        Attending WORLDEF? We're offering a complimentary <strong>Deep-Dive Decision Audit</strong> for
-                        all attendees. Let us analyze your last 6 months of ad decisions.
-                    </p>
-                    <ul class="space-y-3 mb-8 text-slate-300">
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#2A8EC9]">✓</span> See how much revenue your tool actually drove
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#2A8EC9]">✓</span> Identify "bleeder" keywords in new markets
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-[#2A8EC9]">✓</span> 1-on-1 strategy session with our founders
-                        </li>
-                    </ul>
-                </div>
-                <div class="md:w-1/3 flex flex-col gap-4 w-full">
-                    <a href="audit.html"
-                        class="w-full bg-[#ec6602] hover:bg-[#d55b02] text-white font-bold py-4 rounded-xl text-center transition-all shadow-lg shadow-orange-900/20">
-                        Claim Free Audit
-                    </a>
-                    <a href="bookdemo.html"
-                        class="w-full bg-white text-slate-900 font-bold py-4 rounded-xl text-center hover:bg-slate-100 transition-all">
-                        Book Meeting Slot
-                    </a>
-                </div>
             </div>
         </div>
     </section>

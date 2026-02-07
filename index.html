@@ -34,13 +34,13 @@
                 <a href="index.html" class="text-2xl font-bold text-slate-900">SADDL</a>
                 <div class="flex items-center gap-8">
                     <a href="worldef.html"
-                        class="text-[#ec6602] hover:text-[#d55b02] text-sm font-bold flex items-center gap-1">
+                        class="bg-slate-900 hover:bg-slate-800 text-sm font-bold flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors shadow-sm">
                         <span class="relative flex h-2 w-2">
                             <span
                                 class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ec6602] opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-[#ec6602]"></span>
                         </span>
-                        WORLDEF Dubai
+                        <img src="assets/images/worldefdubai.png" alt="WORLDEF Dubai" class="h-5 w-auto object-contain">
                     </a>
                     <a href="compare.html" class="text-slate-600 hover:text-slate-900 text-sm font-medium">Compare</a>
                     <a href="features.html" class="text-slate-600 hover:text-slate-900 text-sm font-medium">Features</a>
@@ -62,34 +62,46 @@
     <!-- ============================================ -->
     <!-- SECTION 1: HERO -->
     <!-- ============================================ -->
-    <section class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-slate-50 via-white to-sky-50/30">
-        <div class="max-w-7xl mx-auto px-6 py-20">
-            <div class="max-w-4xl">
-                <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+    <section
+        class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-slate-50 via-white to-sky-50/30 relative overflow-hidden">
+        <!-- Premium Background FX -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none"></div>
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/30 rounded-full blur-[100px] pointer-events-none mix-blend-multiply animate-float">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl animate-fade-in-up">
+                <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
                     See which Amazon ad decisions<br>
-                    <span class="text-[#2A8EC9]">actually made money.</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A8EC9] to-[#1c6fa3]">actually
+                        made money.</span>
                 </h1>
 
-                <p class="text-xl text-slate-600 mb-4 leading-relaxed">
-                    Not metrics. Not trends. The actual dollar impact of every change.
+                <p class="text-xl text-slate-600 mb-4 leading-relaxed max-w-2xl delay-200 animate-fade-in-up">
+                    Not metrics. Not trends. The actual <strong class="text-slate-900">dollar impact</strong> of every
+                    change.
                 </p>
 
-                <p class="text-lg text-slate-500 mb-10">
+                <p class="text-lg text-slate-500 mb-10 delay-300 animate-fade-in-up">
                     Your current tool can't answer this. Here's why.
                 </p>
 
-                <div class="flex flex-wrap gap-4 items-center">
+                <div class="flex flex-wrap gap-4 items-center delay-500 animate-fade-in-up">
                     <a href="audit.html"
-                        class="inline-block bg-slate-900 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate-800 transition-colors shadow-lg">
+                        class="btn-shine-effect inline-block bg-slate-900 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate-800 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">
                         Run Free PPC Audit
                     </a>
                     <a href="bookdemo.html"
-                        class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate-100 transition-colors shadow-lg border border-slate-200">
+                        class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate-50 transition-colors shadow-lg border border-slate-200 hover:-translate-y-1">
                         Book a Demo
                     </a>
                 </div>
 
-                <p class="text-sm text-slate-500 mt-4">2-minute analysis • No API access needed</p>
+                <p class="text-sm text-slate-500 mt-6 flex items-center gap-2 delay-500 animate-fade-in-up">
+                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                    2-minute analysis • No API access needed
+                </p>
             </div>
         </div>
     </section>
